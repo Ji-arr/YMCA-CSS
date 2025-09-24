@@ -1,0 +1,114 @@
+<style>
+/*START - Austin's New Ping Pong*/
+.new-ping-pong .ping-pong-item {
+  /* background-color: #00aeef !important; */
+  background-color: transparent !important;
+  border-radius: 100px !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.new-ping-pong .ping-pong-item .item-image {
+  border-radius: 100px !important;
+  transition: transform 0.4s ease;
+  border: 10px solid white !important;
+}
+
+.new-ping-pong .ping-pong-item .item-description {
+  border: 10px solid white !important;
+  /*background-color: #0060af !important;*/
+    background: linear-gradient(
+    145deg,
+    #00aeef 0%,  /* lighter */
+    #0060af 100% /* darker */
+  ) !important;
+  margin-top: 30px !important;
+  border-radius: 50px 100px 100px 100px !important;
+}
+
+.new-ping-pong .ping-pong-item .item-description h3::after {
+  background-color: #00aeef !important; /* change colour */
+}
+
+/* 3D hover effect – odd tilt right */
+.new-ping-pong .ping-pong-item:nth-of-type(odd):hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D hover effect – even tilt left */
+.new-ping-pong .ping-pong-item:nth-of-type(even):hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.new-ping-pong .ping-pong-item:hover .item-image {
+  transform: translateZ(20px);
+}
+
+/* button always on top */
+.new-ping-pong .ping-pong-item .cta-link,
+.new-ping-pong .ping-pong-item .cta-link .btn {
+  position: relative !important;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+}
+
+.new-ping-pong .ping-pong-item .cta-link {
+  margin-left: 80px !important;  /* pushes it to the right in flex */
+}
+
+#blue-background {
+  background-color:#00aeef !important;
+}
+/*END - Austin's New Ping Pong*/
+
+/*Start - Austin's New Nav bar*/
+.highlighted-pink {
+    background-color:#c6168d;
+    border:2px solid #c6168d;
+    font-family: var(--ylb-font-family-cachet, Cachet), Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: white !important;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+
+.highlighted-pink:hover {
+    background:white;
+    color:#c6168d !important;
+
+}
+
+.highlighted-blue {
+    background-color:#0060af;
+    border:2px solid #0060af;
+    font-family: var(--ylb-font-family-cachet, Cachet), Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: white !important;
+    padding: 10px 14px;
+    cursor: pointer;
+    text-decoration: none !important;;
+    border-radius: 10px;
+}
+
+.highlighted-blue:hover {
+    background:white;
+    color:#0060af !important;
+}
+/*End - Austin's New Nav bar*/
+
+body {
+    background-color: #F5F5F5 !important;
+}
+
+</style>
