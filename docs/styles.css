@@ -116,3 +116,7 @@ body {
     color: var(--ylb-color-dark-grey-1, #F2F2F2);
   	padding:40px;
 }
+
+.banner-white-text .hero__banner__tall  {
+    color: #F2F2F2 !important;
+}
