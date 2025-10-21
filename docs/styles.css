@@ -110,13 +110,9 @@ body {
     background-color: #F5F5F5 !important;
 }
 
-.banner-white-text .hero__banner__tall .col {
-    background: white;
-    border-radius: 50px;
-    color: var(--ylb-color-dark-grey-1, #F2F2F2);
-  	padding:40px;
-}
-
-.banner-white-text .hero__banner__tall  {
-    color: #F2F2F2 !important;
+.banner-white-text .section-banner .banner-wrapper .block-title {
+    font-size: 50px !important;
+    color: #ffffff !important;
+    line-height: 50px;
+    font-weight: 700 !important;
 }
